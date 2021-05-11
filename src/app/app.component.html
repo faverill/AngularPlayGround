@@ -1,4 +1,7 @@
 <h1>Here is app.component.html contents</h1>
+<h2>app.component title = {{title}}</h2> <!--Example of string interpolation-->
+<h2 [style]='appData'>Styled Data</h2> <!--Example of property binding-->
+<input [(ngModel)] = "appData">  <!--Example of 2-Way binding. Requires importing FormModule and NgModule in app.module.ts-->
 <app-child></app-child>
 <app-child2></app-child2>
 <app-child></app-child>
