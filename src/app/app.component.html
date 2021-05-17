@@ -1,7 +1,26 @@
 
 <!--This is the parent html and has its place held by <app-root> in index-->
 <h1>Here is app.component.html contents</h1>
-<h2>app.component title = {{title}}</h2> <!--Example of string interpolation-->
+<div appBlueBackground style="color:white; padding:10px; 
+    font-family:Cambria; font-size: 20px;">
+    Here is an example of an Attribute Directive (i.e., appBlueBackground)
+    <p>There are three kinds of Directives: </p>
+
+    <ol type="1">
+        <li>Component Directive</li>
+        <li>Structural Directive (e.g., *ngIf, *ngFor)</li>
+        <li>Attribute Directive</li>
+    </ol>
+    
+ </div>   
+<br/>
+<div appBlueBackground style="color:white; padding:10px; 
+ font-family:Cambria; font-size: 20px;">
+    <p>An example of use of @ViewChild message from Child to Parent:</p>
+    <p style="color:black;">{{dataFromChild2}}</p>
+</div>
+
+<h2 >app.component title = {{title}}</h2> <!--Example of string interpolation-->
 <h2 [style]='appData'>Styled Data</h2> <!--Example of property binding-->
 <input [(ngModel)] = "appData">  <!--Example of 2-Way binding. Requires importing FormModule and NgModule in app.module.ts-->
 <br/><br/>

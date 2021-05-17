@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Child2Component implements OnInit {
 
+  child2Data: string = "Data to app.component.ts from child2.component.ts";
+
   constructor() { }
 
   ngOnInit(): void {
